@@ -11,6 +11,8 @@ html, body {
 	background-color: white;
 	font-family: 'Sofia Sans', sans-serif;
 	scroll-behavior: smooth;
+	
+	font-weight: 400;
 }
 
 header {
@@ -87,7 +89,7 @@ header {
 	color: white;
 }
 
-.gallery button {
+.gallery .main-image button {
 	width: 35px;
 	height: 35px;
 	border: none;
@@ -120,7 +122,7 @@ header {
 .thumbnail {
 	padding: 15px;
 	height: auto;
-	width: 100%;
+	max-width: 100%;
 	display: flex;
 	gap: 8px;
 	justify-content: space-between;
@@ -130,12 +132,107 @@ header {
 .thumbnail img {
 	width: 100%;
 	opacity: 0.5;
-	aspect-ratio: 1/1;
+	/* aspect-ratio: 1/1; */
 	object-fit: cover;
 }
 
 .thumbnail img.active {
 	opacity: 1;
+}
+
+.info {
+	padding: 15px;
+}
+
+.info .title {
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.info .price {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 18px;
+}
+
+.info .small-description {
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 27px;
+}
+
+.info .tab1 {
+	height: 60px;
+	margin-top: 35px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info .tab1 .quantity {
+	border: 2px solid #E4E4E4;
+	width: 116px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #767676;
+
+	size: 16px;
+	line-height: 24px;
+}
+
+.info .tab1 .quantity button {
+	border: none;
+	width: 11px;
+	color: #767676;
+	background-color: transparent;
+
+	size: 16px;
+	line-height: 22px;
+}
+
+.info .tab1 .add-to-cart {
+	border: none;
+	background-color: #222;
+	width: 248px;
+	height: 100%;
+	color: white;
+
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+.info .tab2 {
+	height: 29px;
+	margin-top: 35px;
+}
+
+.info .technical-info {
+	margin-top: 32px;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.info .technical-info span {
+	text-transform: uppercase;
+	color: #767676;
+}
+
+.tabs-desc {
+	padding: 35px 15px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #222222;
+}
+
+.tabs-desc .inner p:first-child {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 2rem;
 }
 
 @media (max-width: 700px) {
