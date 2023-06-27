@@ -13,6 +13,7 @@ html, body {
 	scroll-behavior: smooth;
 	
 	font-weight: 400;
+	color: #222222;
 }
 
 header {
@@ -209,6 +210,65 @@ header {
 	margin-top: 35px;
 }
 
+.info .tab2 .wishlist {
+	position: relative;
+	width: 8.4rem;
+	height: 1.8rem;
+	display: inline-block;
+}
+
+.info .tab2 .wishlist img {
+	width: 1rem;
+	height: 0.83rem;
+	position: absolute;
+	top: 0.2rem;
+	left: 0;
+}
+
+.info .tab2 .wishlist p {
+	line-height: 1.5rem;
+	font-size: 0.8rem;
+	font-weight: 500;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.info .tab2 .wishlist .line {
+	width: 5.6rem;
+	height: 0.125rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #222;
+}
+
+.info .tab2 .share {
+	position: relative;
+	width: 4.1rem;
+	height: 1.5rem;
+	display: inline-block;
+	margin-left: 2rem;
+}
+
+.info .tab2 .share img {
+	width: 1rem;
+	height: 1.14rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.info .tab2 .share p {
+	line-height: 1.5rem;
+	font-size: 0.8rem;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 .info .technical-info {
 	margin-top: 32px;
 	font-size: 13px;
@@ -225,7 +285,6 @@ header {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
-	color: #222222;
 }
 
 .tabs-desc .inner p:nth-child(odd) {
@@ -240,7 +299,7 @@ header {
 	margin-bottom: 0.5rem;
 }
 
-.tabs {
+.tabs-desc .tabs {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 3rem;
@@ -252,14 +311,46 @@ header {
 	color: #767676;
 }
 
-.tabs-desc .inner ul, .tabs-desc .inner ol {
+.tabs-desc .tabs .selected {
+	color: #222;
+	position: relative;
+}
+
+.tabs-desc .tabs .selected .line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: #222;
+}
+
+.tabs-desc .inner ul{
 	margin-left: 1rem;
+}
+.tabs-desc .inner ol {
+	margin-left: 0.79rem;
+}
+
+.tabs-desc .inner ol li::marker {
+  content: counter(list-item) " ";
+	color: #767676;
+}
+
+.tabs-desc .inner ul li::marker {
+	color: #C4C4C4;
 }
 
 footer {
 	width: 100%;
 	background-color: #E4E4E4;
 	margin-top: 15px;
+	position: relative;
+}
+
+footer a {
+	text-decoration: none;
+	color: #222;
 }
 
 footer .inner {
@@ -290,12 +381,10 @@ footer .footer-inner-middle {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	color: #222222;
 }
 
 footer .footer-inner-middle a {
 	text-decoration: none;
-	color: #222222;
 }
 
 footer .footer-inner-middle div {
@@ -332,6 +421,104 @@ footer .footer-inner-middle .options li .line {
 
 footer .footer-inner-middle ul {
 	list-style: none;
+}
+
+footer .footer-inner-right {
+	margin-top: 50px;
+}
+
+footer .footer-inner-right .title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+footer .footer-inner-right .text1 {
+	margin-top: 30px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+footer .footer-inner-right .input {
+	position: relative;
+	width: 100%;
+	height: 55px;
+	background-color: white;
+	margin-top: 15px;
+}
+
+footer .footer-inner-right .input .input-text {
+	position: absolute;
+	left: 21px;
+	top: 17px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+footer .footer-inner-right .input .input-button {
+	position: absolute;
+	right: 21px;
+	top: 14px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+footer .footer-inner-right .text2 {
+	margin-top: 41px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+footer .footer-inner-right img {
+	margin-top: 13px;
+}
+
+footer .line {
+	width: 100%;
+	height: 1px;
+	background-color: #CFCDCD;
+}
+
+footer .bottom {
+	padding: 28px 15px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+footer .bottom img {
+	margin-left: 5px;
+}
+
+footer .bottom span:nth-child(3) {
+	line-height: 56px;
+	color:#767676;
+}
+
+footer .bottom span:nth-child(4) {
+	margin-left: 20px;
+}
+
+footer .bottom span:nth-child(7) {
+	color:#767676;
+}
+
+footer .bottom span:nth-child(8) {
+	margin-left: 22px;
+}
+
+footer .up {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	right: 0;
+	background-color: #EEE;
 }
 
 @media (max-width: 700px) {
