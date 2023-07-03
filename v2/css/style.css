@@ -857,6 +857,10 @@ header nav, header .icons, .tabs-desc-pc, .breadcrumbs, #menu-toggle, .related {
 		margin: 0;
 	}
 
+	footer .inner .footer-inner-right img {
+		width: 100%;
+	}
+
 	footer .bottom {
 		width: min(90%, 88rem);
 		margin: 0 auto;
