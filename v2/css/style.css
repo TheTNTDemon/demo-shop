@@ -743,6 +743,7 @@ header nav, header .icons, .tabs-desc-pc, .breadcrumbs, #menu-toggle, .related {
 	}
 
 	.related {
+		display: block;
 		width: min(90%, 88rem);
 		margin: 0 auto;
 		margin-top: 100px;
