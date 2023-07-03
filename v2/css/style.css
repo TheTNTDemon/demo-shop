@@ -535,7 +535,7 @@ footer .up {
 	height: auto;
 }
 
-header nav, header .icons, .tabs-desc-pc, .breadcrumbs, .menu-button-container, #menu-toggle, .related {
+header nav, header .icons, .tabs-desc-pc, .breadcrumbs, #menu-toggle, .related {
 	display: none;
 }
 
