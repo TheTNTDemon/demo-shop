@@ -342,6 +342,8 @@ header {
 
 footer {
 	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
 	background-color: #E4E4E4;
 	margin-top: 15px;
 	position: relative;
